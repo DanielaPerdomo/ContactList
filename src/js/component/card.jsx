@@ -26,8 +26,8 @@ export const Card = ({ data }) => {
 
 		<div className="card mb-3" style={{ minWidth: "700px" }}>
 		  <div className="row g-0 ">
-			<div className="col-md-4 align-middle">
-			  <img src={rigoImage}  className="contactImage img-fluid rounded-start"/>
+			<div className="col-md-4 ">
+			  <img src="https://img.freepik.com/fotos-premium/amable-hombre-sonriente-agitando-mano-saludarte-haz-gesto-hola-parece-feliz-verte-pie-sobre-fondo-rosa_525549-6063.jpg?w=2000"  className="contactImage "/>
 			</div>
 			<div className="col-md-6 ">
 			  <div className="card-body">
@@ -47,8 +47,8 @@ export const Card = ({ data }) => {
 			</div>
 	
 			<div className="col-md-2">
-			  <Link to="/demo">
-				<button type="button" className="btn btn-outline-info m-1">
+			  <Link to="/editContact">
+				<button type="button" className="btn btn-outline-info m-1" onClick={() => { handleId(data.id) }}>
 				  <i className="fa-solid fa-pen-to-square"></i>
 				</button>
 			  </Link>
